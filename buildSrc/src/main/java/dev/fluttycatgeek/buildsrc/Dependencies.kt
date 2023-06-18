@@ -77,6 +77,16 @@ object Dependencies {
         const val coreSplash = "androidx.core:core-splashscreen:${Versions.coreSplash}"
     }
 
+    object Room {
+        const val room = "androidx.room:room-runtime:${Versions.room}"
+        const val room_kapt = "androidx.room:room-compiler:${Versions.room}"
+        const val room_ktx = "androidx.room:room-ktx:${Versions.room}"
+        const val room_rx = "androidx.room:room-rxjava2:${Versions.room}"
+        const val room_paging = "androidx.room:room-paging:${Versions.room}"
+        const val room_guava = "androidx.room:room-guava:${Versions.room}"
+        const val room_test = "androidx.room:room-testing:${Versions.room}"
+    }
+
     object TestLibs {
         const val junit = "junit:junit:${Versions.junit}"
         const val extJunit = "androidx.test.ext:junit:${Versions.extJunit}"

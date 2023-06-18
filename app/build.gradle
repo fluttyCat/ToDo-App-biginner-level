@@ -66,6 +66,8 @@ dependencies {
 
     implementation platform('org.jetbrains.kotlin:kotlin-bom:1.8.0')
     implementation platform('androidx.compose:compose-bom:2022.10.00')
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     androidTestImplementation platform('androidx.compose:compose-bom:2022.10.00')
 
 
@@ -93,6 +95,15 @@ dependencies {
     implementation(Dependencies.CommonLibs.hiltViewModel)
     kapt(Dependencies.CommonLibs.hiltCompiler)
     kapt(Dependencies.CommonLibs.hiltViewModelKapt)
+
+    /** room database
+     **/
+
+    implementation(Dependencies.Room.room)
+    implementation(Dependencies.Room.room_ktx)
+    implementation(Dependencies.Room.room_rx)
+    implementation(Dependencies.Room.room_paging)
+    kapt(Dependencies.Room.room_kapt)
 
     /** testing
      **/
