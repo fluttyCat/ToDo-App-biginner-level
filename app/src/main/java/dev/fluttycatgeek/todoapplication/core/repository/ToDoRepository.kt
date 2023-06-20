@@ -1,10 +1,12 @@
 package dev.fluttycatgeek.todoapplication.core.repository
 
+import dagger.hilt.android.scopes.ViewModelScoped
 import dev.fluttycatgeek.todoapplication.core.dao.ToDoDao
 import dev.fluttycatgeek.todoapplication.core.dto.TodoTaskDto
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
+@ViewModelScoped
 class ToDoRepository @Inject constructor(
     private val toDoDao: ToDoDao
 ) {
