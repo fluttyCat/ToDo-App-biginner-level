@@ -21,7 +21,7 @@ object DatabaseModule {
 
     @Singleton
     @Provides
-    fun provideUserInfoDao(db: ToDoDatabase): ToDoDao {
+    fun provideTodoTaskDao(db: ToDoDatabase): ToDoDao {
         return db.todoDao()
     }
 }
