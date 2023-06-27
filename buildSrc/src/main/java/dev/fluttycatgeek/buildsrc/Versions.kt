@@ -17,7 +17,7 @@ object Versions {
     const val coroutines = "1.3.3"
     const val coroutinesAdapter = "1.0.0"
     const val gradleVersions = "0.27.0"
-    const val hilt = "2.44"
+    const val hilt = "2.46.1"
     const val hiltViewModel = "1.0.0-alpha03"
     const val arch = "2.2.0"
     const val archTest = "2.1.0"
