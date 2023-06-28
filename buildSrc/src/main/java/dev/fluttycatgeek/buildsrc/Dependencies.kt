@@ -57,11 +57,12 @@ object Dependencies {
 
     object ComposeLibs {
         const val coreKtx = "androidx.core:core-ktx:${Versions.coreKtx}"
-        const val composeUi = "androidx.compose.ui:ui"
+        const val composeUi = "androidx.compose.ui:ui:${Versions.composeVersion}"
+        const val composeMaterial = "androidx.compose.material:material:${Versions.composeVersion}"
         const val composeUiGraphics = "androidx.compose.ui:ui-graphics"
         const val composeMaterial3 = "androidx.compose.material3:material3"
         const val composeUiPreview =
-            "androidx.compose.ui:ui-tooling-preview"
+            "androidx.compose.ui:ui-tooling-preview:${Versions.composeVersion}"
         const val composeActivity = "androidx.activity:activity-compose:${Versions.composeActivity}"
         const val composeAnimation =
             "androidx.compose.animation:animation:${Versions.composeVersion}"

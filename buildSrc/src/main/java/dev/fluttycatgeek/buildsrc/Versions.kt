@@ -1,7 +1,7 @@
 package dev.fluttycatgeek.buildsrc
 
 object Versions {
-    const val composeVersion = "1.4.7"
+    const val composeVersion = "1.4.3"
     const val kotlinVersion = "1.8.21"
     const val gradle = "8.0"
     const val androidApplication = "8.0.2"
