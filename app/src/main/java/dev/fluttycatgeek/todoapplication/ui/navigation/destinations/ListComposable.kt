@@ -8,9 +8,11 @@ import androidx.navigation.navArgument
 import dev.fluttycatgeek.todoapplication.core.utils.Constants.LIST_ARGUMENT_KEY
 import dev.fluttycatgeek.todoapplication.core.utils.Constants.LIST_SCREEN
 import dev.fluttycatgeek.todoapplication.ui.screens.list.ListScreen
+import dev.fluttycatgeek.todoapplication.ui.sharedViewModel.SharedViewModel
 
 fun NavGraphBuilder.listComposable(
     navigateToTaskScreen: (taskId: Int) -> Unit,
+    sharedViewModel: SharedViewModel
 ) {
     composable(
         route = LIST_SCREEN,
@@ -20,6 +22,7 @@ fun NavGraphBuilder.listComposable(
     ) {
         ListScreen(
             navigateToTaskScreen = navigateToTaskScreen,
+            sharedViewModel = sharedViewModel
         )
     }
 }
